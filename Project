@@ -1,6 +1,25 @@
+#I think we should do a dict because we need to work with values for each service
+#I think it will make it easier to add them for the total
+
+costs = {
+    'oil change':35,
+    'tire rotation':19,
+    'car wash':7,
+    'car wax':12,
+    '-':0
+    }
+
+print('Davy\'s auto shop services\n'
+'Oil change -- $35\n'
+'Tire rotation -- $19\n'
+'Car wash -- $7\n'
+'Car wax -- $12\n')
+
+
 first_service = str(input('Select first service:\n'))
 second_service = str(input('Select second service:\n'))
 print()
+
 
 if first_service == 'Oil change':
     cost_1 = int(costs['oil change'])
@@ -23,3 +42,19 @@ elif second_service == 'Car wax':
     cost_2 = costs['car wax']
 else:
     cost_2 = int(costs['-'])
+  
+
+print('Davy\'s auto shop invoice\n')
+'\n'
+#The if and else function here helps us output two values with very different formats
+if first_service == '-':
+    print('Service 1: No service')
+else:    
+    print('Service 1: %s, $%d' %  (first_service,cost_1)) 
+if second_service == '-':
+    print('Service 2: No service')
+else:   
+    print('Service 2: %s, $%d' % (second_service,cost_2)) 
+# The %s and %d deal with the spacing issue in the line
+print()
+print('Total: $%s' % (cost_1 + cost_2))
