@@ -1,0 +1,25 @@
+first_service = str(input('Select first service:\n'))
+second_service = str(input('Select second service:\n'))
+print()
+
+if first_service == 'Oil change':
+    cost_1 = int(costs['oil change'])
+elif first_service == 'Tire rotation':
+    cost_1 = costs['tire rotation']
+elif first_service == 'Car wash':
+    cost_1 = costs['car wash']
+elif first_service == 'Car wax':
+    cost_1 = costs['car wax']
+else:
+    cost_1 = int(costs['-'])
+    
+if second_service == 'Oil change':
+    cost_2 = costs['oil change']
+elif second_service == 'Tire rotation':
+    cost_2 = costs['tire rotation']
+elif second_service == 'Car wash':
+    cost_2 = costs['car wash']
+elif second_service == 'Car wax':
+    cost_2 = costs['car wax']
+else:
+    cost_2 = int(costs['-'])
