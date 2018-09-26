@@ -1,3 +1,4 @@
+#This is Will Surbaugh's code with help from Sonja Englund
 #I think we should do a dict because we need to work with values for each service
 #I think it will make it easier to add them for the total
 
@@ -8,19 +9,19 @@ costs = {
     'car wax':12,
     '-':0
     }
-
+#service list
 print('Davy\'s auto shop services\n'
 'Oil change -- $35\n'
 'Tire rotation -- $19\n'
 'Car wash -- $7\n'
 'Car wax -- $12\n')
 
-
+#user input from service list
 first_service = str(input('Select first service:\n'))
 second_service = str(input('Select second service:\n'))
 print()
 
-
+#These two if else branches output cost from dict based on user entry
 if first_service == 'Oil change':
     cost_1 = int(costs['oil change'])
 elif first_service == 'Tire rotation':
